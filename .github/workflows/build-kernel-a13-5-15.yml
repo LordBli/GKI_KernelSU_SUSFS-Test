@@ -5,30 +5,6 @@ permissions:
   actions: write   # Allows triggering actions
   
 on:
-  workflow_call:
-    inputs:
-      os_patch_level:
-        type: string
-        required: true
-      kernelsu_variant:
-        type: string
-        required: true
-      kernelsu_branch:
-        type: string
-        required: true
-      version:
-        type: string
-        required: false
-      use_zram:
-        type: boolean
-        required: true
-      use_kpm:
-        type: boolean
-        required: true
-      make_release:
-        type: boolean
-        required: true
-        
   workflow_dispatch:
     inputs:
       kernelsu_variant:
